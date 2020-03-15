@@ -12,6 +12,25 @@ namespace GradeBook
             Name = name;
         }
 
+        public void AddGrade(char letter)
+        {
+            switch(letter)
+            {
+                case 'A':
+                    AddGrade(90);
+                    break;
+                case 'B':
+                    AddGrade(80);
+                    break;
+                case 'C':
+                    AddGrade(70);
+                    break;
+                default:
+                    break;
+            }
+        }
+
+
         public void AddGrade(double grade)
         {
             if(grade <= 100 && grade >= 0)
@@ -68,6 +87,22 @@ namespace GradeBook
         }
 
         private List<double> grades;
-        public string Name;
+
+        public string Name
+        {
+             get
+            {
+                return name;
+            }
+            set
+            {
+                if(!String.IsNullOrEmpty(value))
+                {
+                    name = value;
+                }
+            }
+        }
+
+        private string name;
     }
 }
