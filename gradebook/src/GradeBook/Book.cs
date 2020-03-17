@@ -4,9 +4,11 @@ using System.Text;
 
 namespace GradeBook
 {
-    public class Book
+
+    public delegate void GradeAddedDelegate(object sender, EventArgs args);
+    public class Book : NamedObject
     {
-        public Book(string name)
+        public Book(string name) : base(name)
         {
             grades = new List<double>();
             Name = name;
@@ -36,6 +38,10 @@ namespace GradeBook
             if(grade <= 100 && grade >= 0)
             {
                 grades.Add(grade);
+                if(GradeAdded != null)
+                {
+                    GradeAdded(this, new EventArgs());
+                }
             }
             else
             {
@@ -43,6 +49,8 @@ namespace GradeBook
             }
             
         }
+
+        public event GradeAddedDelegate GradeAdded;
 
         public Statistics GetStatistics()
         {
@@ -88,21 +96,7 @@ namespace GradeBook
 
         private List<double> grades;
 
-        public string Name
-        {
-             get
-            {
-                return name;
-            }
-            set
-            {
-                if(!String.IsNullOrEmpty(value))
-                {
-                    name = value;
-                }
-            }
-        }
+        public const string CATEGORY = "Science";
 
-        private string name;
     }
 }
