@@ -1,0 +1,6 @@
+C:\Workspace\Training-CSharp\HttpClient_ConsoleApp\HttpClient_ConsoleApp\bin\Debug\HttpClient_ConsoleApp.exe.config
+C:\Workspace\Training-CSharp\HttpClient_ConsoleApp\HttpClient_ConsoleApp\bin\Debug\HttpClient_ConsoleApp.exe
+C:\Workspace\Training-CSharp\HttpClient_ConsoleApp\HttpClient_ConsoleApp\bin\Debug\HttpClient_ConsoleApp.pdb
+C:\Workspace\Training-CSharp\HttpClient_ConsoleApp\HttpClient_ConsoleApp\obj\Debug\HttpClient_ConsoleApp.csprojAssemblyReference.cache
+C:\Workspace\Training-CSharp\HttpClient_ConsoleApp\HttpClient_ConsoleApp\obj\Debug\HttpClient_ConsoleApp.exe
+C:\Workspace\Training-CSharp\HttpClient_ConsoleApp\HttpClient_ConsoleApp\obj\Debug\HttpClient_ConsoleApp.pdb
