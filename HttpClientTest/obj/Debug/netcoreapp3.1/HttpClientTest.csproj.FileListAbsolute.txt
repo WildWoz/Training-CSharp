@@ -9,3 +9,5 @@ C:\Workspace\Training-CSharp\HttpClientTest\obj\Debug\netcoreapp3.1\HttpClientTe
 C:\Workspace\Training-CSharp\HttpClientTest\obj\Debug\netcoreapp3.1\HttpClientTest.AssemblyInfo.cs
 C:\Workspace\Training-CSharp\HttpClientTest\obj\Debug\netcoreapp3.1\HttpClientTest.dll
 C:\Workspace\Training-CSharp\HttpClientTest\obj\Debug\netcoreapp3.1\HttpClientTest.pdb
+C:\Workspace\Training-CSharp\HttpClientTest\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Workspace\Training-CSharp\HttpClientTest\obj\Debug\netcoreapp3.1\HttpClientTest.csproj.CopyComplete
