@@ -1,0 +1,11 @@
+C:\Workspace\Training-CSharp\HttpClientTest\bin\Debug\netcoreapp3.1\HttpClientTest.exe
+C:\Workspace\Training-CSharp\HttpClientTest\bin\Debug\netcoreapp3.1\HttpClientTest.deps.json
+C:\Workspace\Training-CSharp\HttpClientTest\bin\Debug\netcoreapp3.1\HttpClientTest.runtimeconfig.json
+C:\Workspace\Training-CSharp\HttpClientTest\bin\Debug\netcoreapp3.1\HttpClientTest.runtimeconfig.dev.json
+C:\Workspace\Training-CSharp\HttpClientTest\bin\Debug\netcoreapp3.1\HttpClientTest.dll
+C:\Workspace\Training-CSharp\HttpClientTest\bin\Debug\netcoreapp3.1\HttpClientTest.pdb
+C:\Workspace\Training-CSharp\HttpClientTest\obj\Debug\netcoreapp3.1\HttpClientTest.csprojAssemblyReference.cache
+C:\Workspace\Training-CSharp\HttpClientTest\obj\Debug\netcoreapp3.1\HttpClientTest.AssemblyInfoInputs.cache
+C:\Workspace\Training-CSharp\HttpClientTest\obj\Debug\netcoreapp3.1\HttpClientTest.AssemblyInfo.cs
+C:\Workspace\Training-CSharp\HttpClientTest\obj\Debug\netcoreapp3.1\HttpClientTest.dll
+C:\Workspace\Training-CSharp\HttpClientTest\obj\Debug\netcoreapp3.1\HttpClientTest.pdb
