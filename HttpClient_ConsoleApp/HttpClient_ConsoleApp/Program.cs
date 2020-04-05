@@ -4,7 +4,10 @@ using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Text;
-
+using Newtonsoft.Json;
+using Pathoschild.Http.Client;
+using System.Net;
+//using System.Messaging;
 
 namespace HttpClientTest
 {
@@ -13,24 +16,26 @@ namespace HttpClientTest
         static HttpClient client = new HttpClient();
         static async Task Main(string[] args)
         {
-            await PostRequestAsync("https://bitbucket.org/site/oauth2/authorize?client_id=gWS7RFBJTwsWS5Yrva&response_type=code", "");
-            Console.WriteLine("Hello");
+            // Passing this in here just as Main is the entry point and this file is more of a sandbox.
+            await PostRequestAsync("", "");
         }
 
         public static async Task<string> PostRequestAsync(String uri, String parameters)
         {
-            Console.WriteLine("Testing1");
-            var client_id = "gWS7RFBJTwsWS5Yrva";
-            //parameters = "";
-            //uri = "https://bitbucket.org/site/oauth2/access_token";
-            var authUrl = "https://bitbucket.org/site/oauth2/authorize?client_id=" + client_id + "&response_type=code";
-            System.Diagnostics.Process.Start(authUrl);
-            var response = await client.PostAsync(uri, new StringContent(parameters));
-            var content = await response.Content.ReadAsStringAsync();
-            Console.WriteLine("Testing2: " + content);
+            {
+                IClient client = new FluentClient("https://api.bitbucket.org/2.0/");
+
+                var messages = await client
+                    .GetAsync("repositories")
+                    .WithBasicAuthentication("WildWoz", "TXtaL6Z2ZPRW7cv2g8mB")
+                    .AsRawJsonObject();
+
+                Console.WriteLine(messages.ToString());
+
+                return messages.ToString();
 
 
-            return content;
+            }
         }
     }
 }
