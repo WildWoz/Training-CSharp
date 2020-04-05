@@ -11,3 +11,4 @@ C:\Workspace\Training-CSharp\HttpClient_ConsoleApp\HttpClient_ConsoleApp\bin\Deb
 C:\Workspace\Training-CSharp\HttpClient_ConsoleApp\HttpClient_ConsoleApp\bin\Debug\System.Net.Http.Formatting.dll
 C:\Workspace\Training-CSharp\HttpClient_ConsoleApp\HttpClient_ConsoleApp\bin\Debug\Pathoschild.Http.Client.xml
 C:\Workspace\Training-CSharp\HttpClient_ConsoleApp\HttpClient_ConsoleApp\bin\Debug\System.Net.Http.Formatting.xml
+C:\Workspace\Training-CSharp\HttpClient_ConsoleApp\HttpClient_ConsoleApp\obj\Debug\HttpClient_ConsoleApp.csproj.CoreCompileInputs.cache

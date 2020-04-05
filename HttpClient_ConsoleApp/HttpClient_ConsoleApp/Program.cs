@@ -23,11 +23,21 @@ namespace HttpClientTest
         public static async Task<string> PostRequestAsync(String uri, String parameters)
         {
             {
-                IClient client = new FluentClient("https://api.bitbucket.org/2.0/");
+                var username = "WildWoz";
+                var password = "TXtaL6Z2ZPRW7cv2g8mB";
+                var plainText_usernamePassword = System.Text.Encoding.UTF8.GetBytes(username + ":" + password);
+                var base64encoded_usernamePassword = System.Convert.ToBase64String(plainText_usernamePassword);
+
+
+                var defaultHttpClient = new HttpClient();
+                defaultHttpClient.DefaultRequestHeaders
+                    .Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", base64encoded_usernamePassword);
+
+                IClient client = new FluentClient("https://api.bitbucket.org/2.0/", defaultHttpClient);
 
                 var messages = await client
                     .GetAsync("repositories")
-                    .WithBasicAuthentication("WildWoz", "TXtaL6Z2ZPRW7cv2g8mB")
+                    //.WithBasicAuthentication("WildWoz", "TXtaL6Z2ZPRW7cv2g8mB");
                     .AsRawJsonObject();
 
                 Console.WriteLine(messages.ToString());
